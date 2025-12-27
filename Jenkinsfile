@@ -9,7 +9,6 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd my-app
-                pip3 install -r requirements.txt
                 '''
             }
         }
@@ -19,7 +18,6 @@ pipeline {
                 sh '''
                 cd my-app
                 python3 hello.py
-                python3 hello.py --name=Sum
                 '''
             }
         }
